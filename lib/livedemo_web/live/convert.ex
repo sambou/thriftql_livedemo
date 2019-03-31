@@ -15,16 +15,16 @@ defmodule LivedemoWeb.LiveConvert do
 
   @default_output """
   schema {
-    query: Query
+  \tquery: Query
   }
 
   type Query {
-    getVideo(title: String): Video
+  \tgetVideo(title: String): Video
   }
 
   type Video {
-    title: String
-    length: Int
+  \ttitle: String
+  \tlength: Int
   }
   """
 
