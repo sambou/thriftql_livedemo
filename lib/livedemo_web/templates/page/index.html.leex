@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="column column-center">
+    <h1>Convert Thrift IDL to GraphQL SDL</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <h2>Input Thrift Schema</h2>
+  </div>
+  <div class="column">
+    <h2>Generated GraphQL Schema</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <form phx-submit="convert" phx-change="convert" class="code-input-form">
+      <textarea class="code-input" name="thrift"><%= @input %></textarea>
+    </form>
+  </div>
+  <div class="column">
+    <%= if @output != "" do %>
+    <div class="code-output-container">
+      <code class="code-output"><%= @output %></code>
+    </div>
+    <%= end %> <%= if @error do %>
+    <div class="code-output-container">
+      <code class="code-output"><%= @error %></code>
+    </div>
+    <%= end %>
+  </div>
+</div>
+<footer class="row">
+  <div class="colum">
+    <p>
+      Built with
+      <a href="https://github.com/sambou/thrift_ql_ex">ThriftQlEx</a> and
+      <a href="https://github.com/phoenixframework/phoenix_live_view"
+        >Phoenix LiveView</a
+      >
+    </p>
+  </div>
+</footer>

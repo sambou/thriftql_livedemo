@@ -1,0 +1,30 @@
+/* This file is for your main application css. */
+
+@import "./phoenix.css";
+@import "../../deps/phoenix_live_view/assets/css/live_view.css";
+
+.code-input-form {
+  height: 100%;
+}
+
+.code-input {
+  height: 100%;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.code-output-container {
+  background: #f4f5f6;
+  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.code-output {
+  font-family: monospace;
+  font-size: 18px;
+  white-space: pre-wrap;
+}
+
+footer {
+  margin-top: 32px;
+}
