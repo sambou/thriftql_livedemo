@@ -32,7 +32,7 @@ defmodule LivedemoWeb.LiveConvert do
     LivedemoWeb.PageView.render("index.html", assigns)
   end
 
-  def mount(session, socket) do
+  def mount(_session, socket) do
     {:ok, assign(socket, input: @default_input, output: @default_output, error: nil)}
   end
 
