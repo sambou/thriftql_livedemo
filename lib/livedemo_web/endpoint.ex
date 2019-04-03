@@ -2,7 +2,7 @@ defmodule LivedemoWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :livedemo
 
   socket "/socket", LivedemoWeb.UserSocket,
-    websocket: [check_origin: ["//localhost", "//slategrey-worried-rooster.gigalixirapp.com"]],
+    websocket: [check_origin: ["//localhost", "//thriftql.gigalixirapp.com"]],
     longpoll: false
 
   # Serve at "/" the static files from "priv/static" directory.
@@ -45,6 +45,6 @@ defmodule LivedemoWeb.Endpoint do
   plug LivedemoWeb.Router
 
   socket "/live", Phoenix.LiveView.Socket,
-    websocket: [check_origin: ["//localhost", "//slategrey-worried-rooster.gigalixirapp.com"]],
+    websocket: [check_origin: ["//localhost", "//thriftql.gigalixirapp.com"]],
     longpoll: false
 end
